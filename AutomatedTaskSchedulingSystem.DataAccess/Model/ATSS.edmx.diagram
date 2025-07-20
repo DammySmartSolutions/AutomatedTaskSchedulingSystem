@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="00e9f20b0ac04fb2be713fd230f481a6" Name="Diagram1">
+        <EntityTypeShape EntityType="ATSSModel.tblSetupLoc" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ATSSModel.tblSetupOrg" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ATSSModel.tblSetupPostion" Width="1.5" PointX="4.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ATSSModel.tblSetupSysUser" Width="1.5" PointX="2.875" PointY="3.25" />
+        <EntityTypeShape EntityType="ATSSModel.tblConfig" Width="1.5" PointX="10.5" PointY="0.75" />
+        <EntityTypeShape EntityType="ATSSModel.tblEmployee" Width="1.5" PointX="5" PointY="3.25" />
+        <EntityTypeShape EntityType="ATSSModel.tblEmployeeeTemp" Width="2.125" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ATSSModel.tblEmployeeAvail" Width="1.5" PointX="0.875" PointY="3.125" />
+        <EntityTypeShape EntityType="ATSSModel.tblSchedule" Width="1.5" PointX="3.375" PointY="7.75" />
+        <EntityTypeShape EntityType="ATSSModel.tblSetupTask" Width="1.5" PointX="5.375" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
