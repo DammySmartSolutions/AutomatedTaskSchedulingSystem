@@ -42,7 +42,15 @@ By automating these constraints, ATSS improves fairness, consistency, and operat
 
 ## 📥 Installation
 
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/your-org/ATSS.git
-   cd ATSS
+### Configure Database
+1. Create a local SQL Server instance (e.g., `ATSS_DEV`).
+2. Update `appsettings.json` connection string under `ConnectionStrings:DefaultConnection`.
+
+### Restore & Build
+```bash
+dotnet restore
+dotnet build
+
+
+
+
