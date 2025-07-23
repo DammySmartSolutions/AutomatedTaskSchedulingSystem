@@ -160,7 +160,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    color: white;
+    color: black;
     background-color: white;
     -webkit-font-smoothing: antialiased;
 }
@@ -212,11 +212,11 @@ p:last-child {
 }
 
 a {
-    color: #71748d;
+    color: black;
 }
 
 a:hover {
-    color: #ff407b;
+    color: blue;
     text-decoration: none;
 }
 
@@ -256,7 +256,7 @@ label {
     width: 100%;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #71748d;
+    color: black;
     background-color: #fff;
     background-image: none;
     border: 1px solid #d2d2e4;
@@ -264,7 +264,7 @@ label {
 }
 
 .form-control:focus {
-    color: #71748d;
+    color: black;
     background-color: #fff;
     border-color: #a7a7f0;
     outline: 0;
@@ -1824,7 +1824,7 @@ Leftsidebar - dark
 .sidebar-dark.nav-left-sidebar .navbar-nav .nav-item {}
 
 .sidebar-dark.nav-left-sidebar .navbar-nav .nav-link {
-    color: #7a80b4;
+    color: white;
 }
 
 .sidebar-dark.nav-left-sidebar .navbar-nav .nav-link:focus,
@@ -2739,15 +2739,15 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #21ae41;
+    background-color: blue;
     border-color: #21ae41;
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
     color: #fff;
-    background-color: #21ae41;
-    border-color: #21ae41;
+    background-color: darkblue;
+    border-color: black;
     box-shadow: 0 0 0 1px rgb(18, 158, 50);
 }
 
@@ -2880,8 +2880,8 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 
 .btn-primary{
     color: #fff;
-    background-color: #2e2f39;
-    border-color: #2e2f39;
+    background-color: darkblue;
+    border-color: black;
 }
 
 .btn-dark:hover {
@@ -3071,7 +3071,7 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 /*--- btn outline light --*/
 
 .btn-outline-light {
-    color: #7171a6;
+    color: black;
     background-color: transparent;
     border-color: #e6e6f2;
 }

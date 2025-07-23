@@ -19,7 +19,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/libs/css/style.css">
+   <link rel="stylesheet" href="../assets/libs/css/style.css?v=4">
     <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
 
 
@@ -65,7 +65,7 @@
                         </label>
                          
                     </div>
-                    <button type="submit" class="btn btn-primary  btn-lg btn-block" runat="server" onserverclick="btnLogin_ServerClick"    id="btnLogin">Log in</button>
+                    <button type="submit" class="btn btn-primary  btn-lg btn-block" runat="server" onserverclick="btnLogin_ServerClick"    id="btnLogin" style="background-color:blue">Log in</button>
                 </form>
             </div>
          <%--   <div class="card-footer bg-white p-0  ">
@@ -93,10 +93,10 @@
           <div class="footer">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="color:blue">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="color:darkblue">
                              
                       
-                               Copyright © 2025 - <% = System.DateTime.Today.Year %> All rights reserved by  <a href="#" style="color:blue">ENGI 9874 _9839 SE TEAM GREAT</a>.
+                               Copyright © 2025 - <% = System.DateTime.Today.Year %> All rights reserved by  <a href="#" style="color:darkblue">ENGI 9874 _9839 SE TEAM GREAT</a>.
 
                         </div>
                        

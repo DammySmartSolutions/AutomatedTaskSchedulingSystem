@@ -223,7 +223,7 @@
 
 
 	
-    <script src="Scripts/ATSS/Dashboard.js?v=1"></script>
+    <script src="Scripts/ATSS/Dashboard.js?v=2"></script>
 
 
 

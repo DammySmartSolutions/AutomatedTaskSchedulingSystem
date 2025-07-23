@@ -15,7 +15,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/libs/css/style.css">
+   <link rel="stylesheet" href="../assets/libs/css/style.css?v=4">
     <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
 
 
@@ -58,7 +58,7 @@
                         <input class="form-control form-control-lg" id="txtconpass" type="password" placeholder="Confirm Password" runat="server">
                     </div>
                     
-            <button type="submit" class="btn btn-primary  btn-lg btn-block" runat="server" onserverclick="btnChgPass_ServerClick" id="btnChgPass">Change Password</button>
+            <button type="submit" class="btn btn-primary  btn-lg btn-block" runat="server" onserverclick="btnChgPass_ServerClick" id="btnChgPass" style="background-color:blue">Change Password</button>
                 </form>
             </div>
        

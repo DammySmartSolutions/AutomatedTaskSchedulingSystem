@@ -83,7 +83,7 @@ function LoadDataTable() {
 
                         'render': function (data, type, full, row) {
 
-                            return '<a id=btnEdit class="btn  btn-dark"> <i class="fa fa-fw fas fas fa-edit" > Edit</i> </a>'
+                            return '<a id=btnEdit class="btn  btn-primary" style="color:white"> <i class="fa fa-fw fas fas fa-edit" > Edit</i> </a>'
 
 
 
@@ -95,7 +95,7 @@ function LoadDataTable() {
 
                         'render': function (data, type, full, row) {
 
-                            return '<a id=btnDelete class="btn  btn-danger mx-2"> <i class="fa fa-fw fas  fas fa-times" > Delete</i>   </a>'
+                            return '<a id=btnDelete class="btn  btn-danger mx-2" style="color:white"> <i class="fa fa-fw fas  fas fa-times" > Delete</i>   </a>'
 
 
 
