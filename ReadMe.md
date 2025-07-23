@@ -1,56 +1,131 @@
-# Automated Task Scheduling System (ATSS)
+# 🛠️ Automated Task Scheduling System
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-org/ATSS/actions)  
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)  
-[![Coverage](https://img.shields.io/badge/coverage-95%25-yellow)](https://github.com/your-org/ATSS/actions)
+A web-based solution developed in **ASP.NET Web Forms** to streamline and automate employee task scheduling. This system dynamically assigns employees to daily setup tasks based on availability, role, gender restrictions, rotation rules, and task dependencies, ensuring optimal and fair distribution.
 
 ---
 
-## 📖 Project Overview
+## 📌 Features
 
-**Automated Task Scheduling System (ATSS)** helps logistics and service organizations (e.g., FedEx Express Canada) automatically generate daily work schedules. ATSS considers:
-
-- Employee availability windows  
-- Gender-based constraints  
-- Historical rotation rules  
-- Task-specific business rules  
-
-By automating these constraints, ATSS improves fairness, consistency, and operational efficiency.
-
----
-
-## 🚀 Key Features
-
-- **Rule-based Scheduling**  
-- **Configurable Constraints** (availability, gender balance, rotation)  
-- **Web UI** for data entry and schedule visualization (ASP.NET WebForms)  
-- **REST API** backend for headless integrations  
-- **Extensible Architecture** (Service → Repository → Controller layers)  
+- ✅ Admin login and access control  
+- 📅 Auto-generation of daily task schedules  
+- 👥 Role-based task assignment (e.g., Cargo Handler)  
+- 🔁 Rotation logic to avoid repetitive assignments  
+- ⚖️ Gender-based constraints (e.g., no female on 'Trailer Unloader')  
+- 🔗 Linked task assignment (equivalent tasks share the same employees)  
+- 🧠 Intelligent fallback logic when employees are unavailable  
+- 📊 Dashboard for task statistics and Employee Availability   
+- 📄 CSV upload for bulk employee data  
+- 💾 Data persistence via SQL Server + Entity Framework  
 
 ---
 
-## 🛠️ Tech Stack
+## 🏗️ System Architecture
 
-- **Backend**: .NET 6 (C#), Entity Framework Core  
-- **Frontend**: ASP.NET WebForms, Bootstrap  
-- **Testing**: MSTest, NUnit, Postman  
-- **Mocking**: Moq, In-Memory EF Provider  
-- **CI/CD**: GitHub Actions  
-- **Database**: SQL Server (local, staging, production)  
+- **Frontend:** ASP.NET Web Forms, Bootstrap, jQuery, DataTables, HTML, CSS 
+- **Backend:** C#, Entity Framework (Database First)  
+- **Database:** SQL Server  
+- **Testing:** MSTest, Moq, Selenium (System Tests)  
 
 ---
 
-## 📥 Installation
+## 🔍 Project Structure
 
-### Configure Database
-1. Create a local SQL Server instance (e.g., `ATSS_DEV`).
-2. Update `appsettings.json` connection string under `ConnectionStrings:DefaultConnection`.
 
-### Restore & Build
+
+```
+/AutomatedTaskSchedulingSystemSolution
+├── AutomatedTaskSchedulingSystem
+│   └── WebPages/
+│       ├── AddEmployee.aspx
+│       ├── GenerateSchedule.aspx
+│       └── SetupLocation.aspx
+│
+├── AutomatedTaskSchedulingSystem.BusinessLogic
+│   ├── Services/
+│   │   ├── AddEmployee.cs
+│   │   ├── GenerateSchedule.cs
+│   │   └── SetupLocation.cs
+│   └── ViewModel/
+│
+├── AutomatedTaskSchedulingSystem.DataAccess
+│   └── Model/
+│       ├── tblSchedule.cs
+│       ├── tblEmployee.cs
+│       └── tblSetupLocation.cs
+│
+├── AutomatedTaskSchedulingSystem.UnitTest
+│   └── TestingService/
+│
+└── AutomatedTaskSchedulingSystem.SystemTest
+    └── SystemTest/
+
+
+---
+
+## 🚀 Getting Started
+
+### 🧱 Prerequisites
+
+- Visual Studio 2022+  
+- SQL Server (Local or Express)  
+- .NET Framework 4.8  
+
+### ⚙️ Setup Instructions
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/DammySmartSolutions/AutomatedTaskSchedulingSystem.git
+   ```
+
+2. Open the solution file (`.sln`) in Visual Studio.
+
+3. Update the database connection string in `Web.config`.
+
+4. Restore the database backup  to create database in your SQL Server
+
+5. Press **F5** or click **Start Debugging** to launch the application.
+
+---
+
+## 🧪 Testing
+
+- **Unit Tests**: Validate logic in the service layer (e.g., schedule generation, employee uploads).
+- **Integration Tests**: Ensure service and database models interact correctly.
+- **System Tests (Selenium)**: Automate browser workflows like login, schedule generation, and navigation.
+
+To run tests:
 ```bash
-dotnet restore
-dotnet build
+Test > Run All Tests
+```
 
+---
 
+## 📊 Quality Metrics
 
+| Metric         | Description                                               |
+|----------------|-----------------------------------------------------------|
+| **POFOD**      | Low – most failures caught in pre-deployment tests        |
+| **ROCOF**      | Rare operational failures after deployment                |
+| **MTBR**       | High – system is reliable across multiple daily runs      |
+| **Availability** | 99%+ uptime expected during standard operations         |
 
+---
+
+## 👨‍💻 Contributors
+
+- **Dominic Aseidu** – Project Planner   
+- **Oluwadamilola Ademiluyi** – Backend Logic, Schedule Algorithm, Integration, Frontend & Testing  
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Memorial University of Newfoundland – ENGI 9874 and ENGI 9839  
+- Prof. Raja Manzar Abbas for supervision and feedback  
+- Selenium, Moq, MSTest teams for testing tools  
