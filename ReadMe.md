@@ -114,7 +114,8 @@ Test > Run All Tests
 ## 👨‍💻 Contributors
 
 - **Dominic Aseidu** – Project Planner   
-- **Oluwadamilola Ademiluyi** – Backend Logic, Schedule Algorithm, Integration, Frontend & Testing  
+- **Oluwadamilola Ademiluyi** – Backend Logic, Schedule Algorithm, Integration, Frontend & Testing, Modelling 
+-
 
 ---
 
